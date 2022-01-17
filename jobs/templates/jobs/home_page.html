@@ -1,0 +1,48 @@
+{% extends 'jobs/base.html' %}
+
+{% block content %}
+
+    <section id="home" class="home">
+        <div class="home-left">
+            <div class="home-left_title title">
+                <span>
+                    Chope ton emploie, <br>
+                    Chope ton avenir
+                </span>
+            </div>
+            <div class="home-left_description">
+                <span>
+                    Trouve pas juste un emploie, construis toi un avenir.<br>
+                    Démarre ta carriére en cherchant parmis nos opportunitées
+                </span>
+            </div>
+            <div class="stats">
+                <div>
+                    <span class='number'>1000</span>
+                    <span>Emploies disponibles</span>
+                </div>
+                <div>
+                    <span class='number'>1000</span>
+                    <span>Entreprises disponibles</span>
+                </div>
+            </div>
+        </div>
+        <div class="home-right">
+            <div class="home-right_title">
+                <span>Chercher un emploie</span>
+            </div>
+
+            <div class="search-bar">
+                <span>Entrer les mots clées : </span>
+                <form action="" method="post">
+                    {% csrf_token %}
+                    {{form}}
+                    <input type="submit" value="Search" class="btn_submit">
+                </form>
+            </div>
+            
+            
+        </div>
+    </section>
+
+{% endblock %}

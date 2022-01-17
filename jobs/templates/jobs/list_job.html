@@ -1,0 +1,39 @@
+{% extends 'jobs/base.html' %}
+
+{% block content %}
+
+    <section id="list-job">
+
+        <div class="search-bar">
+            <span>Entrer les mots clées : </span>
+            <form action="" method="post">
+                {% csrf_token %}
+                {{form}}
+                <input type="submit" value="Search" class="btn_submit">
+            </form>
+        </div>
+        
+        <div class="list-job">
+        
+        {% for job in jobs %}
+            <div class="job">
+                <span class="job-title">
+                    {{job.name}}
+                </span>
+                <span class="job-place">
+                    {{job.place}}
+                </span>
+                <p class="job-mission">
+                    {{job.mission}}
+                <div class="job-join">
+                    <a href="{% url 'apply-job' %}" class="job-join_btn apply_btn">Apply</a>
+                    <a href="#" class="job-join_btn contact_btn">Contacts</a>
+                </div>
+            </div>
+        {% endfor %}
+        
+        </div>
+    </section>
+
+
+{% endblock %}

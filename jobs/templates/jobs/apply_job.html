@@ -1,0 +1,14 @@
+{% extends 'jobs/base.html' %}
+
+{% block content %}
+
+    <section id="apply-job">
+        <p class="apply-job_desc">Ajouter votre CV nous nous chargerons de l'envoyer !</p>
+        <form action="" method="post" novalidate> 
+            {% csrf_token %}
+            {{form.as_p}}
+            <input type="submit" value="Envoyer" class="btn_submit">
+        </form>
+    </section>
+
+{% endblock %}

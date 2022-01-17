@@ -1,0 +1,240 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+body {
+    padding: 0px 100px;
+}
+
+/* == HEADER == */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 2px solid #111;
+    padding: 40px 0px;
+}
+
+.logo {
+    width: 15%;
+}
+
+.logo a {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #111;
+    word-spacing: 2;
+    text-decoration: none;
+    font-family: 'Pushster', cursive;
+}
+
+.links {
+    flex: 1;
+    display: flex;
+}
+
+.link {
+    margin: 0px 40px;
+    font-size: 1.2rem;
+}
+
+/* == END == */
+
+/* == HOME PAGE == */
+
+#home {
+    width: 100%;
+    height: calc(100vh - 140px);
+}
+
+.home {
+    display: flex;
+    align-items: center;
+}
+
+.home > * {
+    flex: 1;
+}
+
+.home-left_title {
+    font-size: 4rem;
+    width: max-content;
+    margin: 30px 0px;
+    position: relative;
+}
+
+.home-left_title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #111;
+}
+
+.home-left_description {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.stats {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.stats > * {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.number {
+    font-size: 5rem;
+}
+
+
+
+.home-right_title span {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+/* == END HOME == */
+
+/* == LIST AD == */
+
+.search-bar {
+    margin: 20px 0px;
+}
+
+.search-bar label {
+    display: none;
+}
+
+.search-bar span {
+    font-size: 1.2rem;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #111;
+    font-size: 1.2rem;
+}
+
+.search-bar .btn_submit {
+    width: 15%;
+}
+
+.search-bar input::placeholder {
+    font-size: 1.2rem;
+}
+
+.list-job {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 10px;
+    padding: 20px
+}
+
+.job {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.job > * {
+    margin: 20px 0px;
+}
+
+.job-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.job-place {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.job-join {
+    display: flex;
+    justify-content: space-between;
+}
+
+.job-join_btn {
+    /* border: 1px solid; */
+    width: 200px;
+    padding: 14px 0px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.apply_btn {
+    background-color: #548CFF;
+    color: #fff;
+}
+
+.contact_btn {
+    border: 1px solid #111;
+}
+
+/* == End == */
+
+/* == == */
+
+
+label {
+    font-size: 1.5rem;
+}
+
+input#id_file {
+    padding: 20px;
+    border: 1px solid;
+    width: 100%;
+}
+
+input.btn_submit {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    margin: 20px 0px;
+    background-color: #548CFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+.apply-job_desc {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px 0px;
+}
+
+/* == == */
+
+
+
+
+

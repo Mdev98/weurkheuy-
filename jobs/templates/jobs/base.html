@@ -1,0 +1,46 @@
+{% load static %}
+
+<html>
+
+<head>
+    <title>Weurkheuy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&family=Pushster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'jobs/style.css' %}" />
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="{% url 'home-page' %}">Weurkheuy.</a>
+        </div>
+        <nav>
+            <ul class="links">
+                <li>
+                    <a href="{% url 'list-job' %}" class="link">Trouver un emploie</a>
+                </li>
+                <li>
+                    <a href="#" class="link">Outils de Salaire</a>
+                </li>
+                <li>
+                    <a href="#" class="link">Conseil de carriére</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+
+        {% block content %}
+
+    
+        {% endblock %}
+        
+    </main>
+    
+
+</body>
+
+</html>
